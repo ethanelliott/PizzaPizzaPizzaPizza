@@ -66,25 +66,25 @@
                             android:id="@+id/radioButton5"
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
-                            android:text="RadioButton" />
+                            android:text="Round Pizza 6 Slices ($5.50)" />
 
                         <RadioButton
                             android:id="@+id/radioButton6"
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
-                            android:text="RadioButton" />
+                            android:text="Round Pizza 8 Slices ($7.99)" />
 
                         <RadioButton
                             android:id="@+id/radioButton7"
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
-                            android:text="RadioButton" />
+                            android:text="Round Pizza 10 Slices ($9.50)" />
 
                         <RadioButton
                             android:id="@+id/radioButton8"
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
-                            android:text="RadioButton" />
+                            android:text="Round Pizza 12 Slices ($11.38)" />
                     </RadioGroup>
 
                 </LinearLayout>
@@ -124,61 +124,61 @@
                             android:id="@+id/checkBox12"
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
-                            android:text="CheckBox" />
+                            android:text="Mushroom ($5.00)" />
 
                         <CheckBox
                             android:id="@+id/checkBox22"
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
-                            android:text="CheckBox" />
+                            android:text="Sun Dried Tomatoes ($5.00)" />
 
                         <CheckBox
                             android:id="@+id/checkBox23"
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
-                            android:text="CheckBox" />
+                            android:text="Chicken ($7.00)" />
 
                         <CheckBox
                             android:id="@+id/checkBox24"
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
-                            android:text="CheckBox" />
+                            android:text="Ground Beef ($8.00)" />
 
                         <CheckBox
                             android:id="@+id/checkBox25"
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
-                            android:text="CheckBox" />
+                            android:text="Shrimps ($10.00)" />
 
                         <CheckBox
                             android:id="@+id/checkBox26"
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
-                            android:text="CheckBox" />
+                            android:text="Pineapple ($5.00)" />
 
                         <CheckBox
                             android:id="@+id/checkBox27"
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
-                            android:text="CheckBox" />
+                            android:text="Steak ($9.00)" />
 
                         <CheckBox
                             android:id="@+id/checkBox28"
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
-                            android:text="CheckBox" />
+                            android:text="Avocado ($5.00)" />
 
                         <CheckBox
                             android:id="@+id/checkBox29"
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
-                            android:text="CheckBox" />
+                            android:text="Tuna ($5.00)" />
 
                         <CheckBox
                             android:id="@+id/checkBox30"
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
-                            android:text="CheckBox" />
+                            android:text="Broccoli ($8.00)" />
                     </LinearLayout>
 
                 </LinearLayout>
@@ -258,15 +258,40 @@
                             android:id="@+id/checkBox31"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Delivery Charge" />
+                            android:text="Delivery Charge ($5.00)" />
+
+                        <EditText
+                            android:id="@+id/editText2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="Name"
+                            android:inputType="textPersonName" />
 
                         <EditText
                             android:id="@+id/editText"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:height="Address"
                             android:ems="10"
-                            android:hint="Special Instructions"
+                            android:hint="Name"
                             android:inputType="textPersonName" />
+
+                        <EditText
+                            android:id="@+id/editText3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="Phone Number"
+                            android:inputType="phone" />
+
+                        <EditText
+                            android:id="@+id/editText4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="Email Address"
+                            android:inputType="textEmailAddress" />
                     </LinearLayout>
 
                 </LinearLayout>
