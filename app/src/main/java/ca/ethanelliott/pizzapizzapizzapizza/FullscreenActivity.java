@@ -73,7 +73,7 @@ public class FullscreenActivity extends AppCompatActivity {
                 Intent intent = new Intent(FullscreenActivity.this, MainActivity.class);
                 startActivity(intent);
             }
-        }, 0);
+        }, 2000);
     }
 
     private void toggle() {
