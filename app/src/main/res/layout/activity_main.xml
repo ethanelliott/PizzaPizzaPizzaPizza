@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:text="Let's Build This Pizza"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="30sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Size of the Pizza:"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingStart="14dp"
+                        android:paddingLeft="14dp"
+                        android:paddingTop="0dp"
+                        android:paddingEnd="14dp"
+                        android:paddingRight="14dp"
+                        android:paddingBottom="14dp">
+
+                        <RadioButton
+                            android:id="@+id/radioButton5"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="RadioButton" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton6"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="RadioButton" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton7"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="RadioButton" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton8"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="RadioButton" />
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Toppings:"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingStart="14dp"
+                        android:paddingLeft="14dp"
+                        android:paddingEnd="14dp"
+                        android:paddingRight="14dp"
+                        android:paddingBottom="14dp">
+
+                        <CheckBox
+                            android:id="@+id/checkBox12"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="CheckBox" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox22"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="CheckBox" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox23"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="CheckBox" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox24"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="CheckBox" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox25"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="CheckBox" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox26"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="CheckBox" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox27"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="CheckBox" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox28"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="CheckBox" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox29"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="CheckBox" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox30"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="CheckBox" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Extras:"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingStart="14dp"
+                        android:paddingLeft="14dp"
+                        android:paddingEnd="14dp"
+                        android:paddingRight="14dp"
+                        android:paddingBottom="14dp">
+
+                        <CheckBox
+                            android:id="@+id/checkBox31"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Extra Cheese? ($5.00)" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Delivery"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingStart="14dp"
+                        android:paddingLeft="14dp"
+                        android:paddingEnd="14dp"
+                        android:paddingRight="14dp"
+                        android:paddingBottom="14dp">
+
+                        <CheckBox
+                            android:id="@+id/checkBox31"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Delivery Charge" />
+
+                        <EditText
+                            android:id="@+id/editText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="Special Instructions"
+                            android:inputType="textPersonName" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary"
+        android:elevation="20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Total: $0.00"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FF9800"
+            android:elevation="0dp"
+            android:text="Order >"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
