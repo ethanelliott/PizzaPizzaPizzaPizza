@@ -4,8 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.Locale;
 import java.util.Map;
@@ -26,6 +30,11 @@ public class ConfirmationActivity extends AppCompatActivity {
     TextView totalTxt;
     TextView totalCostTxt;
 
+    TextView nameTxt;
+    TextView addressTxt;
+    TextView phoneNumberTxt;
+    TextView emailTxt;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,6 +48,11 @@ public class ConfirmationActivity extends AppCompatActivity {
         taxCostTxt = findViewById(R.id.taxCostTxt);
         totalTxt = findViewById(R.id.totalTxt);
         totalCostTxt = findViewById(R.id.totalCostTxt);
+
+        nameTxt = findViewById(R.id.nameTxt);
+        addressTxt = findViewById(R.id.addressTxt);
+        phoneNumberTxt = findViewById(R.id.phoneNumberTxt);
+        emailTxt = findViewById(R.id.emailTxt);
 
         Intent thisIntent = getIntent();
 
@@ -63,10 +77,31 @@ public class ConfirmationActivity extends AppCompatActivity {
         taxCostTxt.setText(String.format(Locale.CANADA, "$%.2f\n", tax));
         totalCostTxt.setText(String.format(Locale.CANADA, "$%.2f\n", total));
 
-        name = thisIntent.getStringExtra("name");
+        nameTxt.setText(thisIntent.getStringExtra("name"));
+        addressTxt.setText(thisIntent.getStringExtra("address"));
+        phoneNumberTxt.setText(thisIntent.getStringExtra("phoneNumber"));
+        emailTxt.setText(thisIntent.getStringExtra("email"));
     }
 
     public void back(View view) {
         finish();
+    }
+
+    public void submitOrder(View view) {
+        WHERES_THE_TOAST("Order Sent!", "Your order has been submitted successfully!", Toast.LENGTH_LONG);
+    }
+
+    private void WHERES_THE_TOAST(String title, String message, int length) {
+        LayoutInflater inflater = getLayoutInflater();
+        View toastLayout = inflater.inflate(R.layout.my_toast, (ViewGroup) findViewById(R.id.toast_root_view));
+        TextView titleTxt = toastLayout.findViewById(R.id.toast_title);
+        titleTxt.setText(title);
+        TextView bodyTxt = toastLayout.findViewById(R.id.toast_body);
+        bodyTxt.setText(message);
+        Toast toast = new Toast(getApplicationContext());
+        toast.setGravity(Gravity.CENTER, 0, 0);
+        toast.setDuration(length);
+        toast.setView(toastLayout);
+        toast.show();
     }
 }
