@@ -54,6 +54,7 @@
                         android:textStyle="bold" />
 
                     <RadioGroup
+                        android:id="@+id/pizzaSizeGroup"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:paddingStart="14dp"
@@ -64,25 +65,26 @@
                         android:paddingBottom="14dp">
 
                         <RadioButton
-                            android:id="@+id/radioButton5"
+                            android:id="@+id/size6Rdo"
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
+                            android:checked="true"
                             android:text="Round Pizza 6 Slices ($5.50)" />
 
                         <RadioButton
-                            android:id="@+id/radioButton6"
+                            android:id="@+id/size8Rdo"
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
                             android:text="Round Pizza 8 Slices ($7.99)" />
 
                         <RadioButton
-                            android:id="@+id/radioButton7"
+                            android:id="@+id/size10Rdo"
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
                             android:text="Round Pizza 10 Slices ($9.50)" />
 
                         <RadioButton
-                            android:id="@+id/radioButton8"
+                            android:id="@+id/size12Rdo"
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
                             android:text="Round Pizza 12 Slices ($11.38)" />
@@ -122,63 +124,73 @@
                         android:paddingBottom="14dp">
 
                         <CheckBox
-                            android:id="@+id/checkBox12"
+                            android:id="@+id/addMushroomChk"
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
+                            android:onClick="addMushroom"
                             android:text="Mushroom ($5.00)" />
 
                         <CheckBox
-                            android:id="@+id/checkBox22"
+                            android:id="@+id/addTomatoesChk"
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
+                            android:onClick="addTomatoes"
                             android:text="Sun Dried Tomatoes ($5.00)" />
 
                         <CheckBox
-                            android:id="@+id/checkBox23"
+                            android:id="@+id/addChickenChk"
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
+                            android:onClick="addChicken"
                             android:text="Chicken ($7.00)" />
 
                         <CheckBox
-                            android:id="@+id/checkBox24"
+                            android:id="@+id/addBeefChk"
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
+                            android:onClick="addBeef"
                             android:text="Ground Beef ($8.00)" />
 
                         <CheckBox
-                            android:id="@+id/checkBox25"
+                            android:id="@+id/addShrimpChk"
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
+                            android:onClick="addShrimp"
                             android:text="Shrimps ($10.00)" />
 
                         <CheckBox
-                            android:id="@+id/checkBox26"
+                            android:id="@+id/addPineappleChk"
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
+                            android:onClick="addPineapple"
                             android:text="Pineapple ($5.00)" />
 
                         <CheckBox
-                            android:id="@+id/checkBox27"
+                            android:id="@+id/addSteakChk"
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
+                            android:onClick="addSteak"
                             android:text="Steak ($9.00)" />
 
                         <CheckBox
-                            android:id="@+id/checkBox28"
+                            android:id="@+id/addAvocadoChk"
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
+                            android:onClick="addAvocado"
                             android:text="Avocado ($5.00)" />
 
                         <CheckBox
-                            android:id="@+id/checkBox29"
+                            android:id="@+id/addTunaChk"
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
+                            android:onClick="addTuna"
                             android:text="Tuna ($5.00)" />
 
                         <CheckBox
-                            android:id="@+id/checkBox30"
+                            android:id="@+id/addBroccoliChk"
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
+                            android:onClick="addBroccoli"
                             android:text="Broccoli ($8.00)" />
                     </LinearLayout>
 
@@ -216,9 +228,10 @@
                         android:paddingBottom="14dp">
 
                         <CheckBox
-                            android:id="@+id/checkBox31"
+                            android:id="@+id/addExtraCheeseChk"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:onClick="addExtraCheese"
                             android:text="Extra Cheese? ($5.00)" />
                     </LinearLayout>
 
@@ -256,13 +269,14 @@
                         android:paddingBottom="14dp">
 
                         <CheckBox
-                            android:id="@+id/checkBox31"
+                            android:id="@+id/addDeliveryChk"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:onClick="addDelivery"
                             android:text="Delivery Charge ($5.00)" />
 
                         <EditText
-                            android:id="@+id/editText2"
+                            android:id="@+id/nameTxt"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:ems="10"
@@ -270,7 +284,7 @@
                             android:inputType="textPersonName" />
 
                         <EditText
-                            android:id="@+id/editText"
+                            android:id="@+id/addressTxt"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:ems="10"
@@ -278,7 +292,7 @@
                             android:inputType="textPersonName" />
 
                         <EditText
-                            android:id="@+id/editText3"
+                            android:id="@+id/phoneTxt"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:ems="10"
@@ -286,7 +300,7 @@
                             android:inputType="phone" />
 
                         <EditText
-                            android:id="@+id/editText4"
+                            android:id="@+id/emailTxt"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:ems="10"
@@ -316,7 +330,7 @@
         app:layout_constraintBottom_toBottomOf="parent">
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/runningTotalTxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"

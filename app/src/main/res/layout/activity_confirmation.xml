@@ -68,16 +68,19 @@
                             android:layout_height="match_parent">
 
                             <TextView
-                                android:id="@+id/textView3"
-                                android:layout_width="wrap_content"
+                                android:id="@+id/pizzaSizeTxt"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="test\ntest" />
+                                android:layout_weight="3"
+                                android:text="Pizza Size" />
 
                             <TextView
-                                android:id="@+id/textView6"
+                                android:id="@+id/pizzaSizeCostTxt"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="TextView" />
+                                android:layout_weight="1"
+                                android:text="$0.00"
+                                android:textAlignment="textEnd" />
                         </TableRow>
 
                         <TableRow
@@ -85,29 +88,75 @@
                             android:layout_height="match_parent">
 
                             <TextView
-                                android:id="@+id/textView7"
+                                android:id="@+id/chargesTxt"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="TextView" />
+                                android:layout_weight="3"
+                                android:text="Charges" />
 
                             <TextView
-                                android:id="@+id/textView4"
+                                android:id="@+id/chargesCostTxt"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="TextView" />
+                                android:layout_weight="1"
+                                android:text="$0.00"
+                                android:textAlignment="textEnd" />
                         </TableRow>
 
                         <TableRow
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent" />
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/taxTxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:text="Tax" />
+
+                            <TextView
+                                android:id="@+id/taxCostTxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="$0.00"
+                                android:textAlignment="textEnd" />
+                        </TableRow>
 
                         <TableRow
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent" />
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/totalTxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:text="Total" />
+
+                            <TextView
+                                android:id="@+id/totalCostTxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="$0.00"
+                                android:textAlignment="textEnd" />
+                        </TableRow>
+
                     </TableLayout>
 
                 </LinearLayout>
 
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"></LinearLayout>
             </androidx.cardview.widget.CardView>
 
             <Space
